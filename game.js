@@ -1,6 +1,6 @@
 
 var buttonColours = ["red", "blue", "green", "yellow"];
-
+var highScore = 0;
 var gamePattern = [];
 var userClickedPattern = [];
 
@@ -10,6 +10,7 @@ var level = 0;
 $(".not").click(function() {
   if (!started) {
     $("#level-title").text("Level " + level);
+    $('.not').animate({opacity:.3});
     nextSequence();
     started = true;
   }
@@ -50,7 +51,12 @@ function checkAnswer(currentLevel) {
         $("body").removeClass("game-over");
       }, 200);
 
-      $("#level-title").text("Game Over, Press Any Key to Restart");
+      if (level-1 > highScore) {
+        highScore = level-1;
+      };
+
+      $("#level-title").text("Hmm ccd, Press Play Button to Restart");
+      $("#Highscore").text("Highscore: "+highScore);
 
       //2. Call startOver() if the user gets the sequence wrong.
       startOver();

@@ -1,20 +1,28 @@
 body {
   text-align: center;
-  background-color: #011F3F;
+  background-color: #7ed3b2;
 }
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
-  margin:  5%;
+  font-size: 250%;
+  margin:  2%;
   color: #FEF2BF;
+}
+
+.footer{
+  background-color: #05004e;
+  color:white;
+  padding:1%;
+  text-align: center;
+  font-size: 15px;
 }
 
 .container {
   display: block;
   width: 50%;
   margin: auto;
-
+  padding-bottom: 3%;
 }
 
 .btn {
