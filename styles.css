@@ -1,37 +1,40 @@
 body {
   text-align: center;
-  background-color: #7ed3b2;
+  background-color: #011F3F;
 }
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
-  font-size: 250%;
-  margin:  2%;
+  font-size: 2rem;
+  margin:  1%;
+  margin-top: 2%;
   color: #FEF2BF;
-}
-
-.footer{
-  background-color: #05004e;
-  color:white;
-  padding:1%;
-  text-align: center;
-  font-size: 15px;
 }
 
 .container {
   display: block;
   width: 50%;
   margin: auto;
-  padding-bottom: 3%;
+
 }
 
 .btn {
-  margin: 25px;
+  margin: 15px;
   display: inline-block;
   height: 200px;
   width: 200px;
   border: 10px solid black;
   border-radius: 20%;
+}
+
+.play-btn {
+  margin: 25px;
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 20%;
+  background-color: white;
+  font-size:30px;
+  padding:5px;
 }
 
 .game-over {
